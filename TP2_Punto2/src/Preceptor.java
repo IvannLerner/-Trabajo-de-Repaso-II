@@ -1,0 +1,17 @@
+
+
+public class Preceptor extends Persona {
+
+    private String cursoAsignado;
+
+    public Preceptor(String nombre, int edad, String cursoAsignado) {
+        super(nombre, edad);
+        this.cursoAsignado = cursoAsignado;
+    }
+
+    public void mostrarInformacion() {
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Edad: " + getEdad());
+        System.out.println("Curso: " + cursoAsignado);
+    }
+}
